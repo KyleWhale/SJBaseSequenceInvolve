@@ -11,21 +11,21 @@ Pod::Spec.new do |s|
   s.frameworks  = "UIKit", "AVFoundation"
   s.requires_arc = true
 
-  s.source_files = 'SJBaseSequenceInvolve/*.{h,m}'
+  s.source_files = 'Class/*.{h,m}'
   s.default_subspecs = 'Common', 'SequenceInvolve'
   
   s.subspec 'Common' do |ss|
-    ss.source_files = 'SJBaseSequenceInvolve/Common/**/*.{h,m}'
+    ss.source_files = 'Class/Common/**/*.{h,m}'
     ss.dependency 'SJBaseSequenceInvolve/ResourceLoader'
   end
   
   s.subspec 'ResourceLoader' do |ss|
-    ss.source_files = 'SJBaseSequenceInvolve/ResourceLoader/*.{h,m}'
-    ss.resources = 'SJBaseSequenceInvolve/ResourceLoader/SJBaseSequenceInvolveResources.bundle'
+    ss.source_files = 'Class/ResourceLoader/*.{h,m}'
+    ss.resources = 'Class/ResourceLoader/SJBaseSequenceInvolveResources.bundle'
   end
   
   s.subspec 'SequenceInvolve' do |ss|
-      ss.source_files = 'SJBaseSequenceInvolve/SequenceInvolve/**/*.{h,m}'
+      ss.source_files = 'Class/SequenceInvolve/**/*.{h,m}'
       ss.dependency 'SJBaseSequenceInvolve/Common'
   end
   
