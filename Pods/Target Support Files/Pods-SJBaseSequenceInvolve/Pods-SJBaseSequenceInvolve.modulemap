@@ -1,0 +1,6 @@
+framework module Pods_SJBaseSequenceInvolve {
+  umbrella header "Pods-SJBaseSequenceInvolve-umbrella.h"
+
+  export *
+  module * { export * }
+}

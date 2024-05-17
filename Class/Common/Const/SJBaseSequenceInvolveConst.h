@@ -1,0 +1,72 @@
+//
+//  SJBaseSequenceInvolveConst.h
+//  Pods
+//
+//  Created by 畅三江 on 2019/8/6.
+//
+
+#import <Foundation/Foundation.h>
+
+/**
+ 用于记录常量和一些未来可能提供的通知.
+ */
+
+NS_ASSUME_NONNULL_BEGIN
+
+extern NSInteger const SJAccidentPresenceViewTag;
+extern NSInteger const SJPresentViewTag;
+
+
+@interface SJAccidentPresenceZIndexes : NSObject
++ (instancetype)shared;
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+
+@property (nonatomic) NSInteger textPopupViewZIndex;
+@property (nonatomic) NSInteger promptingPopupViewZIndex;
+@property (nonatomic) NSInteger controlLayerViewZIndex;
+@property (nonatomic) NSInteger danmakuViewZIndex;
+@property (nonatomic) NSInteger placeholderImageViewZIndex;
+@property (nonatomic) NSInteger watermarkViewZIndex;
+@property (nonatomic) NSInteger subtitleViewZIndex;
+@property (nonatomic) NSInteger contentDataViewZIndex;
+@end
+
+// - ContentData Notifications -
+
+
+extern NSNotificationName const SJContactIntegratereserveStatusDidChangeNotification;
+extern NSNotificationName const SJContactIntegrateDefinitionSwitchStatusDidChangeNotification;
+
+extern NSNotificationName const SJContactIntegrateURLAssetWillChangeNotification;
+extern NSNotificationName const SJContactIntegrateURLAssetDidChangeNotification;
+
+extern NSNotificationName const SJContactIntegrateApplicationDidEnterBackgroundNotification;
+extern NSNotificationName const SJContactIntegrateApplicationWillEnterForegroundNotification;
+extern NSNotificationName const SJContactIntegrateApplicationWillTerminateNotification;
+
+extern NSNotificationName const SJContactIntegrateContentDataControllerWillDeallocateNotification;
+extern NSNotificationName const SJContactIntegrateContentDataTimeControlStatusDidChangeNotification;
+extern NSNotificationName const SJContactIntegratePictureInPictureStatusDidChangeNotification;
+extern NSNotificationName const SJContactIntegrateContentDataDidFinishNotification;
+extern NSNotificationName const SJContactIntegrateContentDataDidReplayNotification;
+extern NSNotificationName const SJContactIntegrateContentDataWillStopNotification;
+extern NSNotificationName const SJContactIntegrateContentDataDidStopNotification;
+extern NSNotificationName const SJContactIntegrateContentDataWillRefreshNotification;
+extern NSNotificationName const SJContactIntegrateContentDataDidRefreshNotification;
+extern NSNotificationName const SJContactIntegrateContentDataWillSeekNotification;
+extern NSNotificationName const SJContactIntegrateContentDataDidSeekNotification;          
+
+extern NSNotificationName const SJContactIntegrateContentTimeDidChangeNotification;
+extern NSNotificationName const SJContactIntegrateDurationDidChangeNotification;
+extern NSNotificationName const SJContactIntegratePlayableDurationDidChangeNotification;
+extern NSNotificationName const SJContactIntegratePresentationSizeDidChangeNotification;
+extern NSNotificationName const SJContactIntegratedevelopBackTypeDidChangeNotification;
+
+extern NSNotificationName const SJContactIntegrateRateDidChangeNotification;
+extern NSNotificationName const SJContactIntegrateMutedDidChangeNotification;
+extern NSNotificationName const SJContactIntegrateVolumeDidChangeNotification;
+extern NSNotificationName const SJContactIntegrateScreenLockStateDidChangeNotification;
+
+extern NSString *const SJContactIntegrateNotificationUserInfoKeySeekTime;
+NS_ASSUME_NONNULL_END

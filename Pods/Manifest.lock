@@ -1,0 +1,41 @@
+PODS:
+  - Masonry (1.1.0)
+  - SJUIKit/AttributesFactory (0.0.0.59):
+    - SJUIKit/AttributesFactory/Deprecated (= 0.0.0.59)
+    - SJUIKit/AttributesFactory/UIKitText (= 0.0.0.59)
+  - SJUIKit/AttributesFactory/Deprecated (0.0.0.59)
+  - SJUIKit/AttributesFactory/UIKitText (0.0.0.59)
+  - SJUIKit/ObserverHelper (0.0.0.59)
+  - SJUIKit/Queues (0.0.0.59)
+  - SJUIKit/SQLite3 (0.0.0.59):
+    - SJUIKit/SQLite3/Core (= 0.0.0.59)
+    - SJUIKit/SQLite3/Protocol (= 0.0.0.59)
+    - YYModel
+  - SJUIKit/SQLite3/Core (0.0.0.59):
+    - SJUIKit/SQLite3/Protocol
+    - YYModel
+  - SJUIKit/SQLite3/Protocol (0.0.0.59):
+    - YYModel
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Masonry
+  - SJUIKit/AttributesFactory
+  - SJUIKit/ObserverHelper
+  - SJUIKit/Queues
+  - SJUIKit/SQLite3
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SJUIKit
+    - YYModel
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SJUIKit: a40111941e408cc17d4c1c23495aa92999e814b0
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: c8a3de0bf3093b9d6b007551bd81abdd5557cfb8
+
+COCOAPODS: 1.15.2
