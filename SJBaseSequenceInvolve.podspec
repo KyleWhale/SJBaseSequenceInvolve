@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { 'SanJiang' => 'changsanjiang@gmail.com' }
   s.platform     = :ios, '12.0'
-  s.source       = { :git => 'https://github.com/changsanjiang/SJBaseSequenceInvolve.git', :tag => "v#{s.version}" }
+  s.source       = { :git => 'https://github.com/KyleWhale/SJBaseSequenceInvolve.git', :tag => "v#{s.version}" }
   s.frameworks  = "UIKit", "AVFoundation"
   s.requires_arc = true
 
